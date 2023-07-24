@@ -1,0 +1,10 @@
+.car_div {
+  width: 250px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  border-radius: 10px;
+  background: rgb(105, 166, 206);
+  color: #fff;
+}
