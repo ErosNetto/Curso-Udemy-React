@@ -98,14 +98,12 @@ function App() {
   
   // check if guesses ended
   useEffect(() => {
-    setTimeout(() => {
-      if (guesses <= 0) {
-        // reset all states
-        clearLetterStates();
-  
-        setGameStage(stages[2].name)
-      }
-    }, 1500);
+    if (guesses <= 0) {
+      // reset all states
+      clearLetterStates();
+
+      setGameStage(stages[2].name)
+    }
   }, [guesses]);
 
   // check win condition
@@ -113,16 +111,14 @@ function App() {
     const uniqueLetters = [...new Set(letters)];
 
     // win condition
-    if (guessedLetters.length === uniqueLetters.length && gameStage === stages[1].name) {
+    if (guessedLetters.length === uniqueLetters.length) {
       // add score
       setScore((actualScore) => actualScore += 100);
-      setGuesses(guessesQty);
-      // restart game with new word
-      setTimeout(() => {
-        startGame();
-      }, 1500)
+
+      // restart hame with new word
+      startGame();
     }
-  }, [guessedLetters, letters, startGame, gameStage]);
+  }, [guessedLetters, letters, startGame]);
 
   // restarts the game
   const retry = () => {
