@@ -6,15 +6,19 @@ body {
   font-family: Helvetica;
   margin: 0;
   padding: 0;
-  background: linear-gradient(180deg, rgba(9, 35, 175, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    background: linear-gradient(180deg, rgb(104 55 223) 0%, rgb(36 13 75) 100%);
   color: #fff;
 }
 
+h1, h2, h3, h4, h5, h6, p {
+  color: #fffcf2;
+}
+
 button {
-  background: #1646a0;
-  color: #fff;
+  background: rgb(39 22 75);
+  color: #751bd7;
   padding: 0 45px;
-  border: 2px solid #fff;
+  border: 2px solid #751bd7;
   border-radius: 25px;
   height: 50px;
   text-transform: uppercase;
@@ -25,5 +29,5 @@ button {
 }
 
 button:hover {
-  background: #0923af;
+  background: rgb(29 15 59);
 }

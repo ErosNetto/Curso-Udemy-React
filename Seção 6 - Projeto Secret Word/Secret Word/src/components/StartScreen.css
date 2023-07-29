@@ -1,6 +1,30 @@
-.start h1 {
-  font-size: 3.5em;
+.logo h1:nth-child(1) {
+  display: flex;
+  font-size: 2.5em;
+  margin: 0;
 }
+
+.logo h1:nth-child(2) {
+  font-size: 5.5em;
+  margin: -14px 0 20px 0;
+  text-transform: uppercase;
+}
+
+.logo span {
+  color: #1646a0;
+  background-color: #fca311;
+  padding: 0px 5px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px 1px #000;
+}
+
+/* .logo span {
+  color: #1646a0;
+  background-color: #d7cf5b;
+  padding: 0px 5px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px 1px #000;
+} */
 
 .start p {
   margin-bottom: 2em;
