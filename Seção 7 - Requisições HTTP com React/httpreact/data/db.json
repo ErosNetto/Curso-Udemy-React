@@ -39,41 +39,6 @@
       "name": "Bota",
       "price": "20",
       "id": 8
-    },
-    {
-      "name": "Papel",
-      "price": "2.90",
-      "id": 9
-    },
-    {
-      "name": "Mouse",
-      "price": "60",
-      "id": 10
-    },
-    {
-      "name": "Monitor",
-      "price": "120",
-      "id": 11
-    },
-    {
-      "name": "carro",
-      "price": "12000",
-      "id": 12
-    },
-    {
-      "name": "carro2",
-      "price": "12000",
-      "id": 13
-    },
-    {
-      "name": "carro2",
-      "price": "12000",
-      "id": 14
-    },
-    {
-      "name": "Carro3",
-      "price": "123123",
-      "id": 15
     }
   ]
 }
