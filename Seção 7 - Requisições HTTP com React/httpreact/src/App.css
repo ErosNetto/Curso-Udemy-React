@@ -14,3 +14,10 @@
   flex-direction: column;
   margin-bottom: 15px;
 }
+.produto {
+  display: flex;
+}
+
+.produto li {
+  margin: 5px 20px;
+}

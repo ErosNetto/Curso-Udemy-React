@@ -1,6 +1,6 @@
 import './App.css'
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 
 // 4 - Custom hook
 import { useFetch } from './hooks/useFetch';
@@ -8,7 +8,7 @@ import { useFetch } from './hooks/useFetch';
 const url = 'http://localhost:3000/products';
 
 function App() {
-  const [products, setProducts] = useState([]);
+  // const [products, setProducts] = useState([]);
 
   // 4 - Custom hook
   const { data: items, httpConfig, loading, error } = useFetch(url);
@@ -58,6 +58,11 @@ function App() {
     setPrice('');
   };
 
+  // 8 - Desafio 6
+  const handleRemove = (id) => {
+    httpConfig(id, 'DELETE');
+  };
+
   return (
     <>
       <div>
@@ -68,7 +73,10 @@ function App() {
         {!error && (
           <ul>
             {items && items.map((product) => (
-              <li key={product.id}>{product.name} - R$: {product.price}</li>
+              <div className="produto" key={product.id}>
+                <li>{product.name} - R$: {product.price}</li>
+                <button type="button" onClick={() => handleRemove(product.id)}>Excluir</button>
+              </div>
             ))}
           </ul>
         )}

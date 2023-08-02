@@ -1,11 +1,6 @@
 {
   "products": [
     {
-      "id": 1,
-      "name": "Camisa",
-      "price": 59.9
-    },
-    {
       "id": 2,
       "name": "Calça vermelha",
       "price": 90
@@ -19,26 +14,6 @@
       "name": "teste",
       "price": "12",
       "id": 4
-    },
-    {
-      "name": "capa de chuva",
-      "price": "5.50",
-      "id": 5
-    },
-    {
-      "name": "Teclado",
-      "price": "110",
-      "id": 6
-    },
-    {
-      "name": "Mouse",
-      "price": "63",
-      "id": 7
-    },
-    {
-      "name": "Bota",
-      "price": "20",
-      "id": 8
     }
   ]
 }
